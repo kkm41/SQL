@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@include file="/admin/header.jsp" %>
+
+<!-- 경로가 '/' 로 시작하면 가장 상위 폴더로부터 표시되는 절대 경로로 인식됩니다 -->
+<!-- 아래와 같이 상대경로로 표시할수도 있습니다 -->
+<%-- <%@inclue file="../sub_menu.jsp"%> --%>
+<%@include file="/admin/sub_menu.jsp" %>
+
+<article>
+	<div class="tb">
+		<div class="row">
+			<div class="col">
+				상품명 : <input type="text" name="key" value="${key}"/>
+				&nbsp;&nbsp;&nbsp;
+				<input class="btn" type="button" name="btn_search" value="검색"/>
+				&nbsp;&nbsp;&nbsp;
+				<input type="button" value="상품등록">
+			</div>
+		</div>	
+		<div class="row">
+			<div class="cotitle"></div>
+			<div class="cotitle"></div>
+			<div class="cotitle"></div>
+			<div class="cotitle"></div>
+			<div class="cotitle"></div>
+			<div class="cotitle"></div>
+		</div>
+		<c:forEach items="" var="">
+		<div class="row">
+			<div class="cotitle"></div>
+			<div class="cotitle"></div>
+			<div class="cotitle"></div>
+			<div class="cotitle"></div>
+			<div class="cotitle"></div>
+			<div class="cotitle"></div>
+		</div>
+		</c:forEach>
+	</div>
+	</div>
+</article>
+
+
+
+<%@include file="/admin/footer.jsp" %>

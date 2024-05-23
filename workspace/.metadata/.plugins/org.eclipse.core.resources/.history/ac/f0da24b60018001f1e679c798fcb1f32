@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ include file ="../header.jsp"%>
+
+<section>
+<%@ include file ="sub_image_menu.jsp" %>
+	<article>
+		<h2></h2>
+		<div class="tb">
+			
+				<div class="coltitle">번호</div>
+				<div class="coltitle">제목</div>
+				<div class="coltitle">작성일</div>
+				<div class="coltitle">답변여부</div>
+			</div>
+			<c:forEach items="${qnaList}" var="qnaVO">
+			<div class="row">
+				<div class="col"></div>
+				<div class="col"></div>
+				<div class="col"></div>
+				<div class="col"></div>
+			</div>
+		</c:forEach>
+		
+		</div>
+	</article>
+	</div>
+
+
+</section>
+<%@ include file ="../header.jsp"%>

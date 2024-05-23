@@ -1,0 +1,5 @@
+package com.himedia.shop.dao;
+
+public class AdminDao {
+
+}

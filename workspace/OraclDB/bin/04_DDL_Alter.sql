@@ -21,11 +21,11 @@ ALTER TABLE booklist RENAME COLUMN title to subject;
 -- rentlist의 outprice 필드의 이름을 rentprice로 수정하세요
 ALTER TABLE booklist rename column outprice to rentprice;
 -- memberlist 테이블의 membername 필드를 name 으로 변경하세요
-ALTER TABLE memberlist rename column membername to name;
+ALTER TABLE memberlist rename column memberName to name;
 -- rentlist 테이블의 rent_date 필드를 rentdate로 변경하세요
 ALTER TABLE rentlist rename column rent_date to rentdate;
--- rentlist의 idx를 numsep 로 변경하세요
-ALTER TABLE rentlist rename column idx to numsep;
+-- rentlist의 idx를 numseq 로 변경하세요
+ALTER TABLE rentlist rename column numsep to numseq;
 
 
 --2. 필드 자료형의 변경
@@ -61,7 +61,7 @@ ALTER TABLE booklist add grade varchar2(15);
 --memberlist에 성별(gender)필드를 varchar2(3)으로 추가
 ALTER TABLE memberlist add gender varchar2(3);
 --memberlist에 나이(age) 필드를 number(2)로 추가
-ALTER TABLE memberlist add age number(2)
+ALTER TABLE memberlist add age number(2);
 
 --4. 필드의 삭제
 -- ALTER TABLE 테이블명 drop column 필드명
@@ -102,7 +102,7 @@ ALTER TABLE booklist modify booknum number(5);
 ALTER TABLE memberlist modify membernum number(5);
 
 -- rentlist의 bnum 필드를 number(5)로 자료형 변경
-ALTER TABLE rentlist modify bnum numer(5);
+ALTER TABLE rentlist modify bnum number(5);
 
 -- rentlist의 mnum 필드를 number(5)로 자료형 변경
 ALTER TABLE rentlist modify mnum number(5);

@@ -1,0 +1,18 @@
+package com.himedia.shop.dao;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+
+public class AdminDao {
+
+	
+	
+	private AdminDao() {}
+	private static AdminDao instance = new AdminDao();
+	public static AdminDao getInstance() {return instance};
+	
+	Connection con = null;
+	PreparedStatement=null;
+	ResultSet rs = null;
+	
+}

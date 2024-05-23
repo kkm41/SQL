@@ -1,0 +1,32 @@
+function loginCheck(){
+	if(document.loginForm.userid.value==""){
+		alert("아이디를 입력하세요");
+		document.loginForm.userid.focus();
+		return false;
+	}else if(document.loginForm.pwd.value==""){
+		alert("패스워드를 입력하세요");
+		document.loginForm.pwd.focus();
+		return false;
+	}else{
+		return true;
+	}
+	
+	
+}
+
+
+function go_search(command){
+	var url="shop.do?command=" + command + "&page=1";
+	document.frm.action = url;
+	document.frm.submit();
+	
+	
+}
+
+function go_detail(pseq){
+	location.href="shop.do?command=adminProductDetail&pseq=" + pseq;
+}
+function go_wrt(){
+	
+	
+}

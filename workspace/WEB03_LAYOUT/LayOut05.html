@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LayOut05.html</title>
+    <style type="text/css">
+        .base{
+            position:relative;
+            width:100%;
+            height:200px;
+            background-color:#EFEF81;
+            margin-bottom:20px;}
+      
+            .base:first-child .title{
+            position:relative;
+            width:400px;
+            height:100px;
+            margin:0 auto;
+            border:1px solid black;
+            font-size:200%;
+            font-weight: bold;
+            text-align: center;
+            line-height:100px;
+        }
+        .base:first-child .text{
+            position:relative;
+            width:400px;
+            height:100px;
+            border:1px solid black;
+            margin:0 auto;
+
+        }
+        .view{
+        position: relative; width:1100px; height:200px; margin:0 auto; border:1px solid red;
+        }
+       
+        .circle{
+        position:relative;
+        width:200px;
+        height:200px;
+        float: left;
+       border-radius: 50%;
+       overflow:hidden;
+    }
+    .circle img{height:200px;
+
+    }
+    .rect{
+        position:relative;
+        width:350px;
+        height: 200px;
+        border: 1px solid blue; float: left; 
+        box-sizing:border-box;
+    }
+    .rect .title{
+        position:relative;
+            width:330px;
+            height:70px;
+            margin:0 auto;
+           background:blue;
+            font-size:200%;
+            font-weight: bold;
+            text-align: center;
+            line-height:70px;
+            color:white;
+    }
+    .rect .text{
+        position:relative;
+            width:330px;
+            height:130px;
+            margin:0 auto;
+           background:white;
+            font-size:90%;
+            line-height:70px;
+            color:blue;
+            border:1px dotted blue;
+    }
+    </style>
+</head>
+<body>
+    <div class="base">
+        <div class="title">Content Title01
+        </div>
+        <div class="text">비상계엄하의 군사재판은 군인·군무원의 범죄나 군사에 관한 간첩죄의 경우와 ·초소·유독 음식물공급·포로에 관한 죄중 법률이 정한 경우에 한하여 단심으로 할 수 있다</div>
+    </div>
+    <div class="base">
+        <div class="view">
+            <div class="circle"><img src="images/Koala.jpg"/></div>
+            <div class="rect">
+            <div class="title"></div>
+            <div class="text"></div>
+        </div>
+            
+            <div class="circle"><img src="images/Koala.jpg"/></div>
+            <div class="rect">
+                <div class="title"></div>
+                <div class="text"></div></div>
+        </div>
+    </div>
+    <div class="base">
+        <div class="view">
+            <div class="view">
+                <div class="circle"><img src="images/Koala.jpg"/></div>
+                <div class="rect">
+                <div class="title"></div>
+                <div class="text"></div>
+            </div>
+                
+                <div class="circle"><img src="images/Koala.jpg"/></div>
+                <div class="rect">
+                    <div class="title"></div>
+                    <div class="text"></div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

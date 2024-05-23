@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\Users\hi\workspace\OraclDB\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1831223267.index
+1646165429.index
+3525113455.index
+2236661720.index
+4069602815.index

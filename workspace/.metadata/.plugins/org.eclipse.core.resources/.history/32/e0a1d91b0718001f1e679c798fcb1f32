@@ -1,0 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ include file ="../header.jsp"%>
+
+<section>
+<%@ include file ="sub_image_menu.jsp" %>
+	<article>
+		<form>
+			<h2>Q & A View</h2>
+				<div class="field">
+					<label>작성자</label><div>${qnaVO.userid}</div>
+				</div>
+				<div class="field">
+					<label>제목</label><div></div>
+				</div>
+				<div class="field">
+					<label>등록일</label><div><fmt:formatDate value="${QnaVO.indate}" type="date"/></div>
+					
+				</div>
+				<div class="field">
+					<label>질문내용</label><div></div>
+				</div>
+				<div class="field">
+					<label>답변내용</label><div></div>
+				</div>
+				<div class="btn">
+					<input type="button" value="목록으로" onClick="location.href='shop.do?command=qnaList">
+				
+				</div>
+		</form>
+	</article>
+	</div>
+</section>
+<%@ include file ="../footer.jsp"%>

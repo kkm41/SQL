@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@include file="/admin/header.jsp" %>
+<%@include file="/admin/sub_menu.jsp" %>
+
+<article>
+	
+	<form>
+			<h2>상품 상세 보기</h2>
+				<div class="field" style="border-top:2px solid blueviolet;">
+					<label>상품분류</label><div>${kind}</div>
+				</div>
+				<div class="field" style="border-top:2px solid blueviolet;">
+					<label>상품명</label><div>${productVO.name}</div>
+				</div>
+				<div class="field" style="border-top:2px solid blueviolet;">
+					<label>원가</label><div>${productVO.price1}</div>
+				</div>
+				<div class="field" style="border-top:2px solid blueviolet;">
+					<label>판매가</label><div>${productVO.price2}</div>
+				</div>
+				<div class="field" style="border-top:2px solid blueviolet;">
+					<label>상세설명</label><div>${productVO.content}</div>
+				</div>
+				<div class="field" style="border-top:2px solid blueviolet;">
+					<label>상품이미지</label>
+					<div><img src="product_images/${productVO.savefilename}" width="300"></div>
+				</div>
+</article>
+
+
+
+<%@include file="/admin/footer.jsp" %>

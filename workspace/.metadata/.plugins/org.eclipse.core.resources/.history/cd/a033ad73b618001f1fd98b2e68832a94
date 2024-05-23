@@ -1,0 +1,34 @@
+package com.himedia.shop.controller.action.admin;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import com.himedia.shop.controller.action.Action;
+import com.himedia.shop.dao.AdminDao;
+import com.himedia.shop.dto.AdminVO;
+import com.himedia.shop.dto.ProductVO;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+public class AdminProductListAction implements Action {
+
+	@Override
+	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		HttpSession session =request.getSession();
+		AdminVO avo =(AdminVO)session.getAttribute("adminUser");
+		if(avo==null) {
+			response.sendRedirect("shop.do?command=admin");
+		}else {
+			AdminDao adao=AdminDao.getInstance();
+			ArrayList<ProductVO> productList=adao.adminProductList();
+			
+			request.setAttribute("productList", productList);
+			request.getRequestDispatcher("admin/product/productList.jsp").forward(request, response);
+		}
+	}
+
+}

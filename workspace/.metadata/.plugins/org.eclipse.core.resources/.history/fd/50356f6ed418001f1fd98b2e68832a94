@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@include file="/admin/header.jsp" %>
+<%@include file="/admin/sub_menu.jsp" %>
+
+<article>
+	<form>
+		<h2>Product Write Form</h2>
+					<div class="field">
+						<label>상품분류</label>
+						<input type="text" name=""/>
+					</div>
+					<div class="field">
+						<label>상품명</label>
+						<input type="text" name=""/>
+					</div>
+					<div class="field">
+						<label>원가</label>
+						<input type="text" name=""/>
+						<label>판매가</label>
+						<input type="text" name=""/>
+						<label>마진</label>
+						<input type="text" name=""/>
+					</div>
+				
+				
+				
+	</form>			

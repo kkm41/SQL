@@ -1,0 +1,50 @@
+.container{
+    display:flex;
+    /* 가운데 나열 */
+    justify-content:center;
+}
+.child{
+    background-color:yellowgreen;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 200px;
+    flex:1;
+    margin:5px;
+    font-size:3em;
+}
+
+/* 최소사이즈 :576px 이하
+   모바일 : 576~768
+   태블릿사이즈: 768~1024
+   데스크탑: 1024~
+   */
+   
+   /* 최소 크기가 1024xp 이라는 뜻 : 디바이스 가로 크기가 1024px 이상인 경우 */
+   @media(min-width:1042px){
+    body{
+        background:coral;
+    }
+
+   }
+   @media(min-width:768px) and (max-width:1023px){
+    body{
+        background:pink;
+    }
+    .container{
+        flex-wrap:wrap;
+    }
+    .child{
+        flex-basis:300px;
+        /* 해당 요소의 가로크기의 최소기준 */
+    }
+   }
+   
+   @media(max-width:768px){
+    body{
+        background:yellow;
+    }
+    .container{
+        flex-direction: column;
+    }
+   }
